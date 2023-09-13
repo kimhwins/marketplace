@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129139358-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-129139358-1");
+
+    import AOS from "aos";
+    import "aos/dist/aos.css";
+
+    // init AOS animation
+    window.addEventListener("load", () => {
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () { AOS.refresh(); }, 500);
+    });
+
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kim Huynh</title>
+
+  <link rel="stylesheet" href="style copy.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+  <!-- <link rel="icon" href="http://www.kimhuynh.net/favicon.ico?v=2" /> -->
+  <link rel="icon" href="logo.ico" />
+</head>
+
+<body>
+
+  <div id="all-the-top-stuff">
+    <div class="navigation">
+      <div class="nav-button float"><a href="https://www.kimhuynh.net/#work/">Work</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/play/">Play</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/about-me/">About</a></div>
+      <div class="nav-button float">
+        <a id="non-select" class="last-nav" href="https://goo.gl/7mjuQz" target="_blank">Resume</a>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="http://www.kimhuynh.net"><img src="images/logo.svg" alt="Kim Huynh"></a>
+    </div>
+
+    <div class="header">
+      <img class="hero fadein" src="images/marketplace hero.png">
+    </div>
+
+    <div class="headline">
+      <div data-aos="fade-down">
+        <div class="wrapper">
+          <img class="row-icon" src="images/marketplace.png">
+        </div>
+        <div id="title">
+          <div>Facebook</div>
+        </div>
+      </div>
+
+      <div data-aos="fade-down" data-aos-delay="500" class="headline-2"> Helping Marketplace sellers succeed <br>
+        with promotions and incentives</div>
+      <br /><br />
+
+      <div data-aos="fade-down" data-aos-delay="800">
+        <div class="half-row-2" style="padding-top: 40px;">
+
+          <div class="column-50">
+            <div class="subheader-33">Role</div>
+            <div class="body-33">
+              Lead designer
+            </div>
+          </div>
+          <div class="column-50">
+            <div class="subheader-33">Project scope</div>
+            <div class="body-33">
+              New features & future vision
+            </div>
+          </div>
+        </div>
+
+        <div class="half-row-2" style="padding-top: 20px;">
+
+          <div class="column-50">
+            <div class="subheader-33">team</div>
+            <div class="body-33">
+              PM, data science, <br>
+              UXR, content design, <br>
+              & engineering
+            </div>
+          </div>
+          <div class="column-50">
+            <div class="subheader-33">timeline</div>
+            <div class="body-33">
+              ~ 12 months
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div data-aos="fade" data-aos-delay="300" class="scroll-downs">
+      <div id="scroll" class="mousey">
+        <div class="scroller"></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-down" class="intro-container">
+    <div class="intro-box">
+      <div style="font-family: 'Kollektif-Bold'; white-space: nowrap;"><span
+          style="display:inline-block; vertical-align: middle; margin-right:8px;"><img
+            src="images/tip-sparkle.svg"></span>Tip:</div>
+      <div id="tip-text">Whew, this is a long one. For a super speedy version of this case study, read the <span
+          class="bold">big, bold headlines & highlighted snippets,</span> or give the <span class="bold">handy skip
+          button</span> or lefthand <span class="bold">table of contents</span> a tap.</div>
+      <a href="#prototypes" style="margin: auto;"><button class="skip-proto">Skip to Prototypes</button></a>
+    </div>
+  </div>
+
+  <div style="margin: 0 10% 0 10%" id="parent">
+    <div>
+      <nav class="toc sticky">
+        <ul>
+          <li>
+            <a href="#overview">Overview</a>
+          </li>
+          <li>
+            <a href="#background">background</a>
+          </li>
+          <li>
+            <a href="#problem">problem</a>
+          </li>
+          <li>
+            <a href="#users">users</a>
+          </li>
+          <li style="line-height: 1.7;">
+            <a href="#seller-promotions" >seller <br> <span style="padding-left: 14px;">promotions</span></a>
+          </li>
+
+          <li>
+            <a href="#popup">pop-up shops</a>
+          </li>
+
+          <li>
+            <a href="#flash-sales">flash sales</a>
+          </li>
+          <li>
+            <a href="#prototypes">prototypes</a>
+          </li>
+
+          <li>
+            <a href="#metrics">metrics</a>
+          </li>
+
+          <li>
+            <a href="#next-steps">next steps</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="testing" style="padding-top: 15px;">
+        <div class="contents">
+          <section data-aos="fade-down" id="overview">
+            <h3>👀 OVERVIEW</h3>
+            <h2>
+              While I was at Facebook Marketplace, <br>
+              I worked with the Seller team to make it easier for sellers to <span class="highlight-text2">promote their
+                products to buyers.</span>
+            </h2>
+            <p>For almost a year, we focused on building 3 new major features in this space: <span
+                class="bold highlight-text-p">Promotions, Flash Sales,
+                and
+                Virtual Pop-up Shops.</span> Plus, I designed a few North Stars peeking into the future of an expanded
+              promotion
+              program for
+              sellers of all sizes!
+            </p>
+          </section>
+
+          <section data-aos="fade-down" id="background">
+            <h3>📚 BACKGROUND</h3>
+            <h2>
+              Facebook Marketplace is where people go <br>to find good deals.
+            </h2>
+            <p>We’re a little different from other shopping sites like Etsy, Nordstrom, or Sephora, where people are
+              looking to be
+              inspired to buy the next new and shiny thing. Instead, we’ve seen in research that <span
+                class="bold highlight-text-p">Marketplace shoppers come to our platform looking for value,</span> like a
+              great deal on a preowned desk or a vintage dress.
+              <br>
+              <br>
+              On the other side of things, <span class="bold highlight-text-p">Marketplace <span
+                  style="font-family: 'Kollektif-BoldItalic';">sellers</span> have pretty obvious wants: to sell more of
+                their items, and to get more money.</span>
+            <!-- <div style="margin: 40px 0; background-color: #F6F6F6; height: 350px; width: 100%"></div> -->
+                                                                        <div class="half-row-2" style="flex-direction: column;">
+                                                                          <img class="img-33" src="images/graphic 1.png">
+                                                                        
+                                                                        </div>
+
+            </p>
+            <p>Both of these groups are crucially important to us as a product team, of course—without either of them,
+              we would have no
+              Marketplace at all!</p>
+          </section>
+
+          <section data-aos="fade-down" id="problem">
+            <h3>🤔 PROBLEM</h3>
+            <h2>
+              Buyers want more value on Marketplace. <br>
+              Sellers want to sell more. <br> <br>
+              Letting sellers put their items on sale solves both— <br>
+              except Marketplace didn’t have that feature yet!
+            </h2>
+            <p>
+              <span class="bold highlight-text-p">By letting sellers put their items on sale,</span> we can kill two
+              birds with one stone: give buyers even more deals to buy,
+              and get sellers even more sales.
+              <br><br>
+              This may sound like an obvious tablestakes feature, but surprisingly, Marketplace didn’t have a way to do
+              this in bulk.
+              Sellers could only reduce the prices of their items one by one, and that’s no fun for anyone trying to
+              make a sale with
+              more than a dozen.
+              <br><br>
+              (Unsurprisingly, sales were a big feature requested in our user feedback groups on Facebook. We certainly
+              still had a
+              lot of catching up to do.)
+            </p>
+          </section>
+
+
+          <section data-aos="fade-down" id="users">
+            <h3>😊😄 USERS</h3>
+            <h2>
+              But not all sellers are made the same: <br>
+              introducing your local small businesses <br>
+              & the Big Brands.
+            </h2>
+            <p>While all sellers share a want of selling more, they can have very distinct individual needs & ways of
+              operating. Our
+              past research showed a few distinct archetypes: hobbyists, SMBs, and Big Brands.
+                                                            <div class="half-row-2">
+                                                              <img class="img-33" src="images/graphic 2.png">
+                                                            
+                                                            </div>
+            </p>
+
+            <p>
+              Since the current way of putting items on sale (slashing the price of individual items) works for
+              hobbyists, who have
+              very few items, <span class="bold highlight-text-p">our focus here was on those SMBs and Big
+                Brands.</span>
+              <br>
+              <br>
+              Along with their very different ways of operation, these 2 groups also have very different approaches to
+              sales—
+                                                            <div class="half-row-2" style="flex-direction: column; margin-bottom: 70px; margin-top: 50px;">
+                                                              <img class="img-33" src="images/graphic 3.png">
+                                                            
+                                                            </div>
+
+            </p>
+            <p>Looking at all their distinct differences, we knew they needed distinct solutions, too. We decided to
+              build 3 new
+              features to fit their needs: <span class="bold highlight-text-p">Seller Promotions and Virtual Pop-up
+                Shops for SMBs, and Flash Sales for the Big Brands.</span>
+            <!-- <div style="margin: 40px 0; background-color: #F6F6F6; height: 450px; width: 100%"></div> -->
+            </p>
+            <p>(While we zeroed in on these 2 user groups, it’s worth mentioning that supporting sellers on Marketplace
+              always means
+              balancing the needs & wants of buyers, all sellers archetypes, and of course Marketplace as a business,
+              all at the
+              same.)</p>
+          </section>
+
+          <section data-aos="fade-down" id="seller-promotions" style="margin-top: -50px;">
+            <hr style="margin-bottom: 70px; height:0.5px;">
+            <h3>🏷️ SELLER PROMOTIONS</h3>
+            <h2>
+              Seller Promotions was designed to be a <br>
+              <span class="bold highlight-text2">quick, easy, & versatile addition</span> to the existing Marketplace
+              seller toolkit.
+            </h2>
+            <p>
+              Most of our SMBs are relatively new to business operations, and they’re exactly what our in-app
+              Marketplace seller
+              experience is designed for — making the process of selling as lightweight and easy breezy as possible,
+              while being
+              versatile enough to cater to the most common use cases. <br><br>
+
+              And so while our team’s plan was to implement all types of
+              common sales & promotions, in standard MVP fashion, <span class="bold highlight-text-p">we started with
+                the most common of them all: flat discounts,</span> ie.
+              your classic 50% off or $15 off.<br><br>
+
+              After close collaboration with our content designer, a few design crits and XFN
+              reviews, and discussion with a designer from the Buyer team, we finalized a straightforward & simplistic
+              flow for MVP,
+              fully using existing components from the Facebook Design System.
+            </p>
+            <br><br>
+            <h2>
+              Our MVP for Seller Promotions was simple.<br>
+              Flat discounts, no bells and whistles.<br>
+              (all that to come later.)
+            </h2>
+            <!-- <div style="margin: 40px 0; background-color: #F6F6F6; height: 450px; width: 100%">
+            </div> -->
+            <div class="row-mocks">
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/seller promo 1.png">
+                <div class="title-mocks">
+                  Entrypoint: Seller Hub
+                </div>
+                <div class="subtitle-mocks">
+                  Seller Promotions lives in <span class="bold">Seller Hub</span>, home of all seller tools & info
+                </div>
+              </div>
+
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/seller promo 2.png">
+                                <div class="title-mocks">
+                                  Creation: Step 1
+                                </div>
+                                <div class="subtitle-mocks">
+                                  To start, sellers input the promotion’s basic, foundational info
+                                </div>
+              </div>
+
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/seller promo 3.png">
+                                        <div class="title-mocks">
+                                          Creation: Step 2
+                                        </div>
+                                        <div class="subtitle-mocks">
+                                          Then, they select listings they want the promotion to apply to, & that’s it!
+                                        </div>
+              </div>
+
+            </div>
+
+                        <div class="row-mocks">
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/seller promo 4.png">
+                            <div class="title-mocks">
+                              Seller Promotions Home
+                            </div>
+                            <div class="subtitle-mocks">
+                              Sellers can manage all their active, upcoming, and past promotions here
+                            </div>
+                          </div>
+                        
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/seller promo 5.png">
+                            <div class="title-mocks">
+                              Promotion Details Page
+                            </div>
+                            <div class="subtitle-mocks">
+                              Tapping a card shows all the promotion’s details at a glance, and it can be edited through the ellipsis
+                            </div>
+                          </div>
+  
+                        
+                        </div>
+
+                                                <div class="row-mocks" style="flex-direction: column;">
+                                                  <img class="img-33" src="images/seller promotions/seller promo web.png">
+                                                  <div class="title-mocks">
+                                                    Seller Promotions on Web
+                                                  </div>
+                                                  <div class="subtitle-mocks">
+                                                    Last but not least, web: user research shows our sellers with lots of items prefer using web
+                                                  </div>
+                                                
+                                                </div>
+
+            <p style="margin: 110px 0;">
+              Of course, even simple flows aren’t without some fixes and edits along the way:
+            </p>
+
+            <div class="row-mocks">
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/seller promo 6.png">
+                <div class="title-mocks">
+                  All Listings Toggle
+                </div>
+                <div class="subtitle-mocks">
+                  Our eng ran into perf issues with the Select All button in Creation: Step 2. Since this is important for sellers, for
+                  MVP, we added it to the 1st step, though not ideal
+                </div>
+              </div>
+            
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/seller promo 7.png">
+                <div class="title-mocks">
+                  Grid View Toggle
+                </div>
+                <div class="subtitle-mocks">
+                  Original designs had a grid view to show more items at once, but it was too complex to implement for MVP
+                </div>
+              </div>
+            
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/seller promo 8.png">
+                <div class="title-mocks">
+                  Integrity Improvements
+                </div>
+                <div class="subtitle-mocks">
+                  Because sale items get promoted, some sellers would slash their prices to $0.01 and then list the real price in the
+                  description to game the system
+                </div>
+              </div>
+            
+            </div>
+
+            <p style="margin-top: 110px;">
+              🎉 <span style="margin-left:5px;" class="bold highlight-text-p">Our test was a metric success</span> (more details at the very end, under <a href="#metrics" class="bold" style="color:black; text-decoration: underline; text-decoration-color: black; -webkit-text-stroke: 0.4px white;">Metrics</a>), so we shipped our
+              MVP successfully, and we were onto the next few common sale types.
+            </p>
+            <br>
+            <br>
+            <h2>
+              Next up, more promotion types— <br>
+              Bulk Discounts & Free Shipping.
+            </h2>
+            <p>
+              These were pretty simple additions to the existing flow, although Bulk Discounts had an added layer. Sellers often knew
+              they wanted an item to have a bulk discount from the very beginning, while making the item’s listing, so we needed to
+              add it into the listing creation flow too.
+            </p>
+
+                        <div class="row-mocks" style="margin-bottom: 40px;">
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/bulk 1.png">
+                            <div class="title-mocks">
+                              Promotion Creation
+                            </div>
+                            <div class="subtitle-mocks">
+                              Here they are added to promotion creation along with our (temporary) implementation restrictions
+                            </div>
+                          </div>
+                        
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/bulk 2.png">
+                            <div class="title-mocks">
+                              Discounts in Composer
+                            </div>
+                            <div class="subtitle-mocks">
+                            Unlike other promotions, bulk discounts are often evergreen and are thought of from a listing’s creation, so we added it
+                            to Marketplace’s Listing Composer
+                            </div>
+                          </div>
+                        
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/bulk 3.png">
+                            <div class="title-mocks">
+                              Product Page
+                            </div>
+                            <div class="subtitle-mocks">
+                              This is what buyers see when they run into a flat discount & bulk discount in the wild!
+                            </div>
+                          </div>
+                        
+                        </div>
+
+
+            <br>
+            <br>
+            <h2>
+              & to infinity and beyond. <br>
+              (translation: Our Holiday North Star)
+            </h2>
+
+            <p>
+              Where to next? In the downtime I had during the holiday season, I worked on a North Star vision for the future of Seller
+              Promotions, featuring even more promotion types and customization. The Figma was pretty vast, but here are some
+              highlights:
+            </p>
+
+
+
+
+            <div class="row-mocks" style="margin-top: 80px; margin-bottom: 80px;">
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/holiday 1.png">
+                <div class="title-mocks">
+                  Customization
+                </div>
+                <div class="subtitle-mocks">
+                  Letting sellers customize how promotions show up on their storefronts on Facebook
+                </div>
+              </div>
+            
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/holiday 2.png">
+                <div class="title-mocks">
+                  Banner Selection
+                </div>
+                <div class="subtitle-mocks">
+                  Marketplace already has a pre-made illustration library for various holidays. What if we offered these to sellers?
+                </div>
+              </div>
+            
+              <div class="column-33-mock">
+                <img class="img-33" src="images/seller promotions/holiday 3.png">
+                <div class="title-mocks">
+                  Seller Promotions Home
+                </div>
+                <div class="subtitle-mocks">
+                  Showing a preview of the banners in the promotion cards
+                </div>
+              </div>
+            
+            </div>
+
+
+                        <div class="row-mocks" style="margin-top: 80px; margin-bottom: 80px;">
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/holiday 4.png">
+                            <div class="title-mocks">
+                              Commerce Profile
+                            </div>
+                            <div class="subtitle-mocks">
+                              Showcasing promotions on the seller’s storefront. Sellers have been wanting to build their brand & profile more and
+                              more, and this is one step!
+                            </div>
+                          </div>
+                        
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/holiday 5.png">
+                            <div class="title-mocks">
+                              Audience Targeting
+                            </div>
+                            <div class="subtitle-mocks">
+                              Letting sellers apply their promotions to followers, past buyers, or everyone on Marketplace
+                            </div>
+                          </div>
+                        
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/seller promotions/holiday 6.png">
+                            <div class="title-mocks">
+                              Product Page Upsell
+                            </div>
+                            <div class="subtitle-mocks">
+                              Buyers can see exclusive promotion codes directly on the product page while they’re browsing
+                            </div>
+                          </div>
+                        
+                        </div>
+
+
+
+                                    <div class="row-mocks" style="margin-top: 80px; margin-bottom: 40px;">
+                                      <div class="column-33-mock">
+                                        <img class="img-33" src="images/seller promotions/holiday 7.png">
+                                        <div class="title-mocks">
+                                          Expanding Bulk Discounts
+                                        </div>
+                                        <div class="subtitle-mocks">
+                                          Giving bulk discounts more granular control — now the discount can increase based on quantity
+                                        </div>
+                                      </div>
+                                    
+                                      <div class="column-33-mock">
+                                        <img class="img-33" src="images/seller promotions/holiday 8.png">
+                                        <div class="title-mocks">
+                                          Free Gifts with Purchase
+                                        </div>
+                                        <div class="subtitle-mocks">
+                                          Adding a new promotion type, as seen at lots of department stores
+                                        </div>
+                                      </div>
+                                  
+                                    
+                                    </div>
+          </section>
+
+
+
+          <section data-aos="fade-down" id="popup" style="margin-top: -50px;">
+            <hr style="margin-bottom: 70px; height:0.5px;">
+            <h3>🛍️ VIRTUAL POP-UP SHOPS</h3>
+            <h2>
+              With Virtual Pop-up Shops, we could feature our sellers in an <span class="bold highlight-text2">eye-catching, editorial way,</span> and give buyers <span class="bold highlight-text2">a reason to
+              trust</span> (and buy more).
+            </h2>
+            <p>
+              When it comes to shopping on Marketplace, buyers usually don’t know who they’re buying from, whether it’s a hobbyist or
+              SMB. It’s why they feel more confident shopping from trusted Big Brands, leading to more sales and our platform giving
+              them more real estate and more spotlights.
+              <br>
+              <br>
+              
+              Virtual Pop-up Shops let us shine the spotlight on our SMBs instead and
+              support them by helping them gain more buyer trust. <span class="bold highlight-text-p">By highlighting qualified shops in a Marketplace-curated collection,
+              we hoped buyers would trust the Facebook name and by extension, the featured shops.</span>
+              <br>
+              <br>
+              For the specifics of this feature, we considered a few things:
+            </p>
+                                                            <div class="half-row-2" style="flex-direction: column; margin-bottom: 80px; margin-top: 60px;">
+                                                              <img class="img-33" src="images/graphic 4.png">
+                                                            
+                                                            </div>
+                        <div class="row-mocks" style="margin-bottom: 40px;">
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/popup shops/popup 1.png">
+                            <div class="title-mocks">
+                              Banner: Variant A
+                            </div>
+                            <div class="subtitle-mocks">
+                              Both banner variants are meant to be very visual & eye-catching! This one features an h-scroll of items, in case one
+                              might interest a buyer
+                            </div>
+                          </div>
+                        
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/popup shops/popup 2.png">
+                            <div class="title-mocks">
+                              Banner: Variant B
+                            </div>
+                            <div class="subtitle-mocks">
+                              Since one of our goals was to give sellers more brand presence on Marketplace, this variant features sellers & shops
+                              instead of products
+                            </div>
+                          </div>
+                        
+                          <div class="column-33-mock">
+                            <img class="img-33" src="images/popup shops/popup 3.png">
+                            <div class="title-mocks">
+                            Pop-up Shop Page
+                            </div>
+                            <div class="subtitle-mocks">
+                              Going off Banner: Variant B, the pop-up shop page was designed to give featured sellers space to express themselves to
+                              buyers
+                            </div>
+                          </div>
+                        
+                        </div>
+      
+          </section>
+
+          <section data-aos="fade-down" id="flash-sales" style="margin-top: -50px;">
+            <hr style="margin-bottom: 70px; height:0.5px;">
+            <h3>⚡️ FLASH SALES</h3>
+            <h2>
+              Flash Sales started out barebones, <br>
+               but evolved into a storefront that landed <br>
+               <span class="bold highlight-text2" style="margin-left:-5px;">big wins for our Big Brands.</span></h2>
+            <p>
+              Flash Sales started out as a sudden top-down ask, so we only had a couple weeks to build it 0→1. Our MVP was a scrappy,
+              bare bones proof of concept. The seller user flow didn’t even exist at this point—the Big Brands were interfacing
+              directly with our product team to setup our first couple flash sale tests, and even calling our PM on his phone on
+              weekends!
+              <br>
+              <br>
+              With no time to partner with our Visual Systems team for nicer illustrations or assets, I created <span class="bold highlight-text-p">a super simple
+              storefront within the Buyer team’s guiding principles.</span> After our first test sales proved to be a success, we polished
+              our UI and working closely with our brand partners and the Buyer team to build a scalable framework that could easily
+              work with any brand’s submitted assets.
+            </p>
+
+
+<div class="row-mocks" style="margin-top: 80px; margin-bottom: 80px;">
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 1.png">
+    <div class="title-mocks">
+      MVP: Banner
+    </div>
+    <div class="subtitle-mocks">
+      Given the Buyer team’s existing banner guidelines and our need to feature brand assets, our MVP banner was very very
+      simplistic
+    </div>
+  </div>
+
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 2.png">
+    <div class="title-mocks">
+      MVP: Flash Sales Landing
+    </div>
+    <div class="subtitle-mocks">
+      With no time to work closely with the Buyer team on a landing experience, this landing page used only existing patterns
+      on Marketplace
+    </div>
+  </div>
+
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 3.png">
+    <div class="title-mocks">
+      MVP: Multi Brand Sale
+    </div>
+    <div class="subtitle-mocks">
+      We were working with a lot of brands in a short period of time, so we expanded the sale to support multiple brands’
+      items at once
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row-mocks" style="margin-top: 80px; margin-bottom: 80px;">
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 4.png">
+    <div class="title-mocks">
+      v2: Banner
+    </div>
+    <div class="subtitle-mocks">
+      After the MVP’s success, we finally had time to polish the UI & get Buyer team approval! We used Instagram’s Shops as an
+      inspiration
+    </div>
+  </div>
+
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 5.png">
+    <div class="title-mocks">
+      v2: Flash Sales Page
+    </div>
+    <div class="subtitle-mocks">
+      The refreshed landing page features the same design patterns as the new banner
+    </div>
+  </div>
+
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 6.png">
+    <div class="title-mocks">
+      v2: Deals Destination
+    </div>
+    <div class="subtitle-mocks">
+      Marketplace already has a page for sale items, called <span class="bold">Deals Destination.</span> We collaborated with that team to feature Flash
+      Sales on their page
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="row-mocks" style="margin-top: 80px; margin-bottom: 40px;">
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 7.png">
+    <div class="title-mocks">
+      v2: Multi Brand Banner
+    </div>
+    <div class="subtitle-mocks">
+      Supporting sales across multiple brands in the redesigned banner
+    </div>
+  </div>
+
+  <div class="column-33-mock">
+    <img class="img-33" src="images/flash sales/flash 8.png">
+    <div class="title-mocks">
+      v2: Multi Brand Sales Page
+    </div>
+    <div class="subtitle-mocks">
+      As the feature scales, we’d need a place for buyers to browse all of the simultaneous sales in one place
+    </div>
+  </div>
+  
+    <div class="column-33-mock">
+      <img class="img-33" src="images/flash sales/flash 9.png">
+      <div class="title-mocks">
+        v2: Multi Brand Landing
+      </div>
+      <div class="subtitle-mocks">
+        We planned to have sales with a singular theme that many brands could participate in, rather than multiple individual
+        sales
+      </div>
+    </div>
+
+</div>
+
+
+            <p style="margin-top: 100px; margin-bottom: 20px;">
+              On the seller side, we wanted to build <span class="bold highlight-text-p">a new self-service flow where Big Brands could submit proposals for flash sales
+              for approval</span> (instead of calling our PM on Saturday nights).
+              <br>
+              <br>
+              This new user flow was handled by a different designer on the Commerce Manager team. This was because Big Brands
+              currently don’t use Facebook app for their seller tools and instead use Commerce Manager, a whole separate web-based
+              suite of tools supported by a separate team. Our teams synced regularly through this process, but I can’t quite speak in
+              detail about the design decisions made here!
+            </p>
+
+            
+                                                            <div class="row-mocks" style="flex-direction: column; margin-bottom: 40px;">
+                                                              <img class="img-33" src="images/flash sales/flash web.png">
+                                                              <div class="title-mocks" style="line-height: 25.833px; margin-bottom: 8px;">
+                                                                Creating Flash Sales on Web <br>
+                                                                (designed by others, here for reference only)
+                                                              </div>
+                                                              <div class="subtitle-mocks">
+                                                                The Commerce Manager team designed and built the seller’s side of the Flash Sale, & it was pretty neat!
+                                                              </div>
+                                                            
+                                                            </div>
+          
+          </section>
+
+                    <section data-aos="fade-down" id="prototypes" style="margin-top: -50px;">
+                      <hr style="margin-bottom: 70px; height:0.5px;">
+                      <h3>🖥️ PROTOTYPES</h3>
+                      <h2>
+                        Take a look at all the prototypes, <br>
+                        featuring the final designs I made:
+                      </h2>
+                      <p>
+                        (These are gifs of the Figma prototypes!)
+                      </p>
+<div class="row-mocks" style="margin-top: 80px; margin-bottom: 40px;">
+  <div class="column-33-mock">
+          <img class="img-33 prototype-mask" src="images/seller promotions.gif">
+
+    <div class="title-mocks" style="line-height: 25.833px;">
+      Seller Promotions: <br>
+      North Star
+    </div>
+    <!-- <div class="subtitle-mocks">
+      Supporting sales across multiple brands in the redesigned banner
+    </div> -->
+  </div>
+
+  <div class="column-33-mock">
+    <img class="img-33 prototype-mask" src="images/virtual popup.gif">
+  
+    <div class="title-mocks">
+      Virtual Pop-up Shops
+    </div>
+    <!-- <div class="subtitle-mocks">
+      Supporting sales across multiple brands in the redesigned banner
+    </div> -->
+  </div>
+
+  <div class="column-33-mock">
+    <img class="img-33 prototype-mask" src="images/flash sales.gif">
+  
+    <div class="title-mocks">
+      Flash Sales: v2
+    </div>
+    <!-- <div class="subtitle-mocks">
+      Supporting sales across multiple brands in the redesigned banner
+    </div> -->
+  </div>
+
+</div>
+                    </section>
+
+                              <section data-aos="fade-down" id="metrics" style="margin-top: -50px;">
+                                <hr style="margin-bottom: 70px; height:0.5px;">
+                                <h3>📊️ METRICS</h3>
+                                <h2>
+                                    Each of our projects had <span class="bold highlight-text2">major impact!</span> <br>
+                                    We passed most of our goals by a landslide.
+                                </h2>
+                                <p>
+                                  While I can’t publicly talk about specific numbers, by the end, each of these projects went above & beyond the original goals our team had set in sales (our team’s topline metric) & seller transactions, plus all sorts of other wins:
+                                </p>
+                                                            <div class="half-row-2" style="flex-direction: column; margin-bottom: 50px; margin-top: 50px;">
+                                                              <img class="img-33" src="images/metrics.png">
+                                                            
+                                                            </div>
+                              
+                              </section>
+
+                                        <section data-aos="fade-down" id="next-steps" style="margin-top: -50px;">
+                                          <hr style="margin-bottom: 70px; height:0.5px;">
+                                          <h3>👋️ NEXT STEPS</h3>
+                                          <h2>
+                                            After our team’s major successes, <br>
+                                            we’d opened the door to more opportunities.
+                                          </h2>
+                                          <p>
+                                            One of the first wins was allocated resources to build <span class="bold highlight-text-p">a new Brand Outlet surface for Big Brands to sell their outlet
+                                            items through Marketplace.</span> Individually, I also wanted to look into the future and explore how we could continue helping
+                                            our sellers succeed.
+                                            <br>
+                                            <br>
+                                            During my downtime, <span class="bold highlight-text-p">I created a quick presentation for our design director</span> & other org design leaders, showcasing some
+                                            quick concepts I’d whipped up for Seller Incentives work that would incentivize sellers to become higher quality sellers
+                                            on our platform. I'm unable to share this work publicly, though!
+                                          </p>
+                                        <p>
+                                          I ended up leaving Marketplace & joining my current team, Facebook Play, but in the end, I’m really glad to have been a part of
+                                          these efforts, and to have left the team on such a happy note. I'm excited to see what Marketplace will be up to next! 😊 
+                                        </p>
+                                        </section>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="parent">
+      <div class="closing" data-aos="fade-down">
+        <hr>
+        <div>
+          <div style="padding-top:30px; letter-spacing: 0.48px; width: fit-content;">
+
+            Thanks for reading! <span><img src="images/hi.png" id="hi-sparkle"></span></div>
+          <div id="lookingfor">
+            Looking for more?
+          </div>
+
+            <div class="half-row-3">
+              <div class="column-33" data-aos="fade-down">
+                <div style="position: relative;">
+                  <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                  <img class="flourishes" style="bottom:-18px; right: -30px; width: 72px;" src="images/adobe flourish.png">
+                <a href="http://www.kimhuynh.net/adobe/">
+                  
+                  <img class="img-33" src="images/new adobe mocks.png">
+                </a>
+                </div>
+                <div style="padding: 0 20px;">
+                  <a href="http://www.kimhuynh.net/adobe/" class="header-33-2 float-4">Adobe
+                    <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img style="margin-left: 2px; padding-bottom: 4px;"
+                        src="images/new arrow.svg"></div></a>
+                  <div class="body-33-2">I interned on the Analytics team, redesigning and streamlining the way users build data viz</div>
+                </div>
+              </div>
+            
+              <div class="column-33" data-aos="fade-down" data-aos-delay="200">
+                <div style="position: relative;">
+      <img class="flourishes" id="left-sparkle" src="images/left sparkle.png">
+      <img class="flourishes" style="bottom:-12px; right: -18px; width: 72px;" src="images/storia flourish.png">
+                  <a href="http://www.kimhuynh.net/storia/">
+              
+                    <img class="img-33" src="images/new storia mocks.png">
+                  </a>
+                </div>
+
+                <div style="padding: 0 20px;">
+                  <a href="http://www.kimhuynh.net/storia/" class="header-33-2 float-4">Storia
+                    <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                        style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                  </a>
+                  <div class="body-33-2">I designed a journaling app concept to inspire busy people to write
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="column-33" data-aos="fade-down" style="margin-right: 0;" data-aos-delay="400">
+                <div style="position: relative;">
+                  <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                  <img class="flourishes" style="bottom:-5px; right: -38px; width: 90px;" src="images/empactful flourish.png">
+                  <a href="http://www.kimhuynh.net/empactful/">
+              
+                    <img class="img-33" src="images/new empactful mocks.png">
+                  </a>
+                </div>
+                <div style="padding: 0 20px;">
+                  <a href="http://www.kimhuynh.net/empactful/" class="header-33-2 float-4">Empactful
+                    <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                        style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                  </a>
+                  <div class="body-33-2">In uni, I designed for a student-made fintech startup focused on investing in social good
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div><button class="float-3 scroll-top"><img src="images/top.svg"></button></div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 80, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1250, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () { AOS.refresh(); }, 500);
+      });
+
+
+
+
+      var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var tableofcontents = document.querySelector(".toc");
+      var rootElement = document.documentElement;
+
+      function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if (rootElement.scrollTop / scrollTotal > 0.05) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn");
+          // tableofcontents.classList.add("showBtn");
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn");
+          // tableofcontents.classList.remove("showBtn");
+        }
+      }
+
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+
+
+
+
+      //   let options = {
+      //     // rootMargin: '5px 10px', // works just like margin on element
+      //     threshold: 0.3 // when ~90% of element is visible, trigger IO
+      //   }
+
+      //   let observer = new IntersectionObserver(callback, options); // trigger callback function when provided options match for an element
+      //   let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //     targets.forEach(target => { // loop through your elements
+      //       observer.observe(target); // observe them
+      //     });
+
+      // // the callback we setup for the observer will be executed now for the first time
+      // // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+      //   let callback = (entries, observer) => {
+      //     entries.forEach(entry => {
+      //       // Each entry describes an intersection change for one observed
+      //       // target element:
+      //       //   entry.boundingClientRect...
+      //       // Your .inactive element is in viewport.
+      //        if (entry.isIntersecting) {
+      //           // Show button
+      //           entry.boundingClientRect.classList.add("highlight-text-p-animate");
+      //         }
+      //     });
+      //   };
+
+
+
+
+
+      //     // We select the element we want to target
+      // var target = document.querySelector(".scroll-top-container");
+
+      // var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var rootElement = document.documentElement;
+
+      // // Next we want to create a function that will be called when that element is intersected
+      // function callback(entries, observer) {
+      //   // The callback will return an array of entries, even if you are only observing a single item
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       // Show button
+      //       scrollToTopBtn.classList.add("showBtn");
+      //     } else {
+      //       // Hide button
+      //       scrollToTopBtn.classList.remove("showBtn");
+      //     }
+      //   });
+      // }
+
+      // function scrollToTop() {
+      //   rootElement.scrollTo({
+      //     top: 0,
+      //     behavior: "smooth"
+      //   });
+      // }
+      // scrollToTopBtn.addEventListener("click", scrollToTop);
+
+      // // Next we instantiate the observer with the function we created above. This takes an optional configuration
+      // // object that we will use in the other examples.
+      // let observer = new IntersectionObserver(callback);
+      // // Finally start observing the target element
+      // observer.observe(target);
+
+
+
+
+
+      // array of the links in the toc (table of content) block
+      var toc;
+      // array of content (links are refers to the content)
+      var content = [];
+
+      // call prepare function for while page is loaded complete
+      document.addEventListener('DOMContentLoaded', function () {
+        prepare();
+        sync();
+      }, false);
+
+      /**
+       * this function get all toc (table of content) links and content 
+       * and save theme
+       */
+      function prepare() {
+        // get all toc (table of content) links
+        toc = document.querySelectorAll('.toc a');
+        let targets = document.querySelectorAll('.highlight-text-p');
+        // get content so that link refer to it
+        toc.forEach(function (link) {
+          var id = link.getAttribute("href");
+          var element = document.querySelector(id);
+          content.push(element);
+        });
+        // sync toc (table of content) whit part of content that is 
+        // visible into viewport while user scroll
+        window.addEventListener("scroll", sync, false);
+      }
+
+
+      /**
+       * this function check if element is visible in viewport 
+       * 
+       * @argument {String} element which we need to check it 
+       * @returns true if element is visible in viewport else return false 
+       */
+      function isElementInViewport(element) {
+        // get element position
+        var rect = element.getBoundingClientRect();
+
+        // return true if a partial of the element is visible
+        return (rect.bottom >= 0 &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight));
+
+        // for while we need check if all off the element is visible in viewport
+        // return (rect.top >= 0 &&
+        //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));
+      }
+
+      /**
+       * this function highlight toc (table of content) links which is visible in viewport
+       */
+      function sync() {
+        // check all content 
+        for (var i = 0; i < content.length; i++) {
+          // if content is visible if viewport highlight it 
+          // else remove highlight from it
+          if (isElementInViewport(content[i])) {
+            // toc[i].classList.add('highlight');
+            toc[i].setAttribute("id", "highlight");
+          } else {
+            // toc[i].classList.remove('highlight');
+            toc[i].removeAttribute("id", "highlight");
+          }
+        }
+      }
+
+      var child1 = document.querySelector(".placeholder");
+      var child2 = document.querySelector(".contents");
+      var parent = document.getElementById("parent");
+      var test = document.querySelector(".testing");
+      var nav = document.querySelector(".toc");
+
+      // var childHeight = parseInt(window.getComputedStyle(child2).height) + "px";
+      var navWidth = (parseInt(window.getComputedStyle(nav).width) + 40) + "px";
+      var navHeight = parseInt(window.getComputedStyle(nav).height);
+      // child1.style.paddingTop = childHeight;
+      test.style.paddingLeft = navWidth;
+      test.style.paddingRight = navWidth;
+      test.style.marginTop = (0 - navHeight) + "px";
+
+
+
+
+      //       let options = {
+      //   rootMargin: 0, // works just like margin on element
+      //   threshold: 0.5 // when ~90% of element is visible, trigger IO
+      // }
+
+
+
+      // the callback we setup for the observer will be executed now for the first time
+      // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+
+      // let callback = (entries, observer) => {
+      //   entries.forEach(entry => {
+      //     // Each entry describes an intersection change for one observed
+      //     // target element:
+      //     //   entry.boundingClientRect...
+      //     // Your .inactive element is in viewport.
+      //      if (entry.isIntersecting) {
+      //         // Show button
+      //         entry.classList.add("highlight-text-p-animate");
+      //       }
+      //   });
+      // };
+
+      //       let observer = new IntersectionObserver(callback); // trigger callback function when provided options match for an element
+
+      //           let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //           targets.forEach(target => { // loop through your elements
+      //             observer.observe(target); // observe them
+      //           });
+
+      const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text2-animate", entry.isIntersecting);
+        });
+      };
+
+      const inViewport2 = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text-p-animate", entry.isIntersecting);
+        });
+      };
+
+      const Obs = new IntersectionObserver(inViewport);
+      const Obs2 = new IntersectionObserver(inViewport2);
+      const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+      // Attach observer to every [data-inviewport] element:
+      document.querySelectorAll('.highlight-text2').forEach(el => {
+        Obs.observe(el, obsOptions);
+      });
+
+      document.querySelectorAll('.highlight-text-p').forEach(el => {
+        Obs2.observe(el, obsOptions);
+      });
+
+    </script>
+</body>
+
+</html>
