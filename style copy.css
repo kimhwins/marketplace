@@ -239,11 +239,15 @@ body {
 }
 
 .header{
-	position: relative;
-	display: block;
-    height: 100vh;
+
 	/* padding-top: 17%; */
 	background-color: #F2F5FF;
+
+		display: flex;
+			width: 100vw;
+			height: 100vh;
+			align-items: center;
+			/* padding-top: 17%; */
 }
 
 .hero{
@@ -262,12 +266,12 @@ body {
 	flex-direction: column;
 	letter-spacing: 0.01em;
 	padding-left: 10%;
-	position: absolute;
-  top: 52%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	
   width: 38%;
   min-width: 700px;
+
+
+
 }
 
 .vertical-center{
